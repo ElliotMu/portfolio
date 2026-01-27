@@ -1,0 +1,58 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    transition: transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #a991f7 !important;
+    transform: translateY(-3px);
+}
+
+h2.display-5, h1.display-4 {
+    text-transform: uppercase;
+}
+
+.btn {
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 15px rgba(0, 129, 250, 0.6);
+}
+
+.screenshot-item img {
+    border-radius: 10px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.screenshot-item img:hover {
+    transform: scale(1.5);
+}
+
+.skill-item {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
