@@ -2,254 +2,512 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Elliot Musart</title>
+    <title>Elliot Musart — Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio d'Elliot Musart, étudiant en BUT Informatique. Projets, compétences et recherche de stage.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#home">Elliot Musart</a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body>
 
-        <section id="home" class="vh-100 d-flex align-items-center text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div>
-                        <h1 class="display-4 fw-bold mb-4">Elliot Musart</h1>
-                        <h2 class="h3 mb-4 opacity-75">Etudiant en BUT Informatique</h2>
-                        <p class="lead mb-4">Bienvenue sur mon portfolio.<br>
-                                            Ici, vous pourrez retrouvez mes projets, et les compétences acquises lors de mon cursus.
-                        </p>
-                        <div class="d-flex gap-3 justify-content-center flex-wrap">
-                            <a href="#about" class="btn btn-outline-light btn-lg px-4">
-                                A propos de moi
-                            </a>
-                            <a href="#projects" class="btn btn-light btn-lg px-4 me-3 mb-2 mb-md-0">
-                                Mes Projets
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-                <div class="row text-center mb-5">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="display-5 fw-bold text-dark mb-3">À propos de moi</h2>
-                        <div class="divider mx-auto mb-4" style="width: 100px; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4">
-                        <h3 class="h4 fw-bold text-dark mb-3">Mon parcours</h3>
-                        <p class="lead mb-4">Etudiant à l'IUT Informatique de Montreuil en parcours A <br>(réalisation d'applications: conception, développement,validation). <br>
-                            Actuellement en deuxième année, je recherche un stage de deux à trois mois, à partir du 13 avril, afin de valider mon année.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="py-5" style="background: linear-gradient(135deg, #f5f7fa 0%, #c4d6f3 100%);">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-6 mx-auto">
-                    <h2 class="display-5 fw-bold text-dark mb-3">Compétences</h2>
-                    <div class="divider mx-auto mb-4" style="width: 100px; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
-                </div>
+            <a class="navbar-brand" href="#home">Elliot Musart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-            
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 col-6 col-sm-6 col-lg-4 mb-5">
-                    <div class="skill-category h-100">
-                        <h4 class="fw-bold mb-4 text-dark">
-                            <span class="badge bg-success rounded-pill px-3 py-2 me-2"></span>
-                            Langages maîtrisés
-                        </h4>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="skill-item skill-mastered flex-fill">Java</div>
-                            <div class="skill-item skill-mastered flex-fill">PHP</div>
-                            <div class="skill-item skill-learning flex-fill">C</div>
-                        </div>
+                <div class="col-12 col-lg-8">
+                    <p class="hero-kicker reveal is-visible"><span class="dot"></span>Actuellement en contrat d'apprentissage</p>
+                    <h1 class="hero-title reveal is-visible">Elliot Musart,<br><em>étudiant en informatique.</em></h1>
+                    <p class="hero-lead reveal is-visible">
+                        En deuxième année de BUT Informatique à l'IUT de Montreuil, je suis passionné par le développement
+                        d'applications, et toujours intéressé par l'apprentissage de nouvelles compétences.
+                    </p>
+                    <div class="hero-cta reveal is-visible">
+                        <a href="#projects" class="btn-line solid">Voir mes projets</a>
+                        <a href="#contact" class="btn-line">Me contacter</a>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-6 col-sm-6 col-lg-4 mb-5">
-                    <div class="skill-category h-100">
-                        <h4 class="fw-bold mb-4 text-dark">
-                            <span class="badge bg-success rounded-pill px-3 py-2 me-2"></span>
-                            Langages de balisage
-                        </h4>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="skill-item skill-mastered flex-fill">HTML</div>
-                            <div class="skill-item skill-mastered flex-fill">CSS</div>
-                            <div class="skill-item skill-mastered flex-fill">Bootstrap</div>
+                    <div class="hero-meta reveal is-visible">
+                        <div class="hero-meta-item">
+                            <div class="label">Formation</div>
+                            <div class="value">BUT Informatique</div>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-6 col-sm-6 col-lg-4 mb-5">
-                    <div class="skill-category h-100">
-                        <h4 class="fw-bold mb-4 text-dark">
-                            <span class="badge bg-success rounded-pill px-3 py-2 me-2"></span>
-                            Bases de données
-                        </h4>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="skill-item skill-mastered flex-fill">SQL</div>
-                            <div class="skill-item skill-mastered flex-fill">PostgreSQL</div>
-                            <div class="skill-item skill-mastered flex-fill">phpMyAdmin</div>
+                        <div class="hero-meta-item">
+                            <div class="label">Parcours</div>
+                            <div class="value">Réalisation d'applications</div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-6 col-sm-6 col-lg-4 mb-5">
-                    <div class="skill-category h-100">
-                        <h4 class="fw-bold mb-4 text-dark">
-                            <span class="badge bg-warning rounded-pill px-3 py-2 me-2"></span>
-                            En apprentissage
-                        </h4>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="skill-item skill-learning flex-fill">Python</div>
-                            <div class="skill-item skill-learning flex-fill">React</div>
-                            <div class="skill-item skill-learning flex-fill">JavaScript</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-6 col-sm-6 col-lg-4 mb-5">
-                    <div class="skill-category h-100">
-                        <h4 class="fw-bold mb-4 text-dark">
-                            <span class="badge bg-info rounded-pill px-3 py-2 me-2"></span>
-                            Technologies
-                        </h4>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="skill-item flex-fill">JavaFX</div>
-                            <div class="skill-item flex-fill">Git/GitHub</div>
-                            <div class="skill-item flex-fill">VSCode</div>
-                            <div class="skill-item flex-fill">IntelliJ</div>
-                            <div class="skill-item flex-fill">PyCharm</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-6 col-sm-6 col-lg-4 mb-5">
-                    <div class="skill-category h-100">
-                        <h4 class="fw-bold mb-4 text-dark">
-                            <span class="badge bg-primary rounded-pill px-3 py-2 me-2"></span>
-                            Méthodologies
-                        </h4>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="skill-item flex-fill">MVC</div>
-                            <div class="skill-item flex-fill">Design Patterns</div>
-                            <div class="skill-item flex-fill">UML</div>
-                            <div class="skill-item flex-fill">Réseaux</div>
+                        <div class="hero-meta-item">
+                            <div class="label">Localisation</div>
+                            <div class="value">Île-de-France</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <br>    
-                
         </div>
     </section>
 
-
-        <section id="projects" class="py-5 bg-light">
-            <div class="container">
-                <div class="row text-center mb-5">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="display-5 fw-bold text-dark mb-3">Mes Projets</h2>
-                        <div class="divider mx-auto mb-4" style="width: 100px; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
-                    </div>
-                </div>
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-6 col-md-6">
-                        <a href="projets/Lunaria.html">
-                            <img src="ressources/menuLunria.png" class="img-fluid h-75 w-100 mb-2" alt="Lunaria">
-                        </a>
-                        <div class="bg-dark bg-opacity-75 w-100 rounded p-3 text-center">
-                            <h5 class="text-white mb-2">Lunaria:Jeu Terraria Like</h5>
-                            <p class="text-white-50 mb-0 small">Java • JavaFX</p>
-                        </div>
-                    </div>
-                   <div class="col-lg-6 col-md-6">
-                        <a href="projets/buvettes.html">
-                            <img src="ressources/accueilMaBuvette.PNG" class="img-fluid h-75 w-100 mb-2" alt="Site PHP Buvettes">
-                        </a>
-                        <div class="bg-dark bg-opacity-75 w-100 rounded p-3 text-center">
-                            <h5 class="text-white mb-2">Site web en PHP</h5>
-                            <p class="text-white-50 mb-0 small">PHP • HTML • CSS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"> 
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
         <div class="container">
-            <div class="row text-center mb-5">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="display-5 fw-bold text-white mb-3">Mes contacts et liens utiles</h2>
-                <div class="divider mx-auto mb-4" style="width: 100px; height: 4px; background: linear-gradient(90deg, #fff, rgba(255,255,255,0.5));"></div>
+            <div class="row reveal">
+                <div class="col-12 col-lg-8 mx-auto text-center mb-5">
+                    <span class="eyebrow">À propos</span>
+                    <h2 class="section-heading">Mon parcours</h2>
+                    <hr class="rule">
+                </div>
             </div>
-            </div>
-
-            <div class="row g-4 justify-content-center">
-
-            <div class="col-md-6 col-lg-5">
-                <div class="card border-0 shadow-lg h-100 text-center p-4">
-                <h5 class="fw-bold mb-2">Email</h5>
-                <p class="text-muted mb-0">elliotmusart@gmail.com</p>
+            <div class="row align-items-start g-5">
+                <div class="col-12 col-lg-7 reveal">
+                    <p class="about-lead">
+                        Étudiant à <strong>l'IUT Informatique de Montreuil</strong>, parcours A (réalisation d'applications :
+                        conception, développement, validation).
+                    </p>
+                    <p class="about-body">
+                        J'aime réaliser des applications, en apprenant de nouveaux langages, ou en découvrant de nouvelles
+                        bibliothèques ou fonctionnalités d'un langage que je connais déjà. Ce qui me plaît dans le développement,
+                        c'est le fait de partir de rien et de voir progressivement mon application prendre forme.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 reveal">
+                    <div class="info-list">
+                        <div class="info-list-row">
+                            <span class="k">Formation</span>
+                            <span class="v">BUT Informatique — 2ème année</span>
+                        </div>
+                        <div class="info-list-row">
+                            <span class="k">Parcours</span>
+                            <span class="v">A · Réalisation d'applications</span>
+                        </div>
+                        <div class="info-list-row">
+                            <span class="k">Établissement</span>
+                            <span class="v">IUT de Montreuil</span>
+                        </div>
+                        <div class="info-list-row">
+                            <span class="k">Statut</span>
+                            <span class="v accent"></span>En contrat d'apprentissage</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-5">
-                <div class="card border-0 shadow-lg h-100 text-center p-4">
-                <h5 class="fw-bold mb-2">Localisation</h5>
-                <p class="text-muted mb-0">Rosny-sous-Bois 93110, Île-de-France</p>
+            <div class="row mt-5 reveal">
+                <div class="col-12">
+                    <h3 class="diploma-block-title">Diplômes</h3>
+                    <div class="diploma-list">
+                        <div class="diploma-item">
+                            <div class="diploma-body">
+                                <h4 class="diploma-title">BUT Informatique</h4>
+                                <p class="diploma-meta">Parcours A — Réalisation d'applications , IUT de Montreuil</p>
+                            </div>
+                            <span class="diploma-status pending">En cours</span>
+                        </div>
+                        <div class="diploma-item">
+                            <div class="diploma-body">
+                                <h4 class="diploma-title">Baccalauréat général</h4>
+                                <p class="diploma-meta">Spécialités Mathématiques &amp; Physique-Chimie , Montreuil</p>
+                            </div>
+                            <span class="diploma-status obtained">Obtenu</span>
+                        </div>
+                        <div class="diploma-item">
+                            <div class="diploma-body">
+                                <h4 class="diploma-title">Brevet des collèges</h4>
+                                <p class="diploma-meta">Montreuil</p>
+                            </div>
+                            <span class="diploma-status obtained">Obtenu</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-lg-5">
-                <div class="card border-0 shadow-lg h-100 text-center p-4 d-flex flex-column justify-content-center">
-                    <h5 class="fw-bold mb-3">Mon CV</h5>
-                    <a href="ressources/CV_Stage_Infomatique_Elliot_Musart.pdf" class="btn btn-primary">Voir mon CV</a>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-5">
-                <div class="card border-0 shadow-lg h-100 text-center p-4 d-flex flex-column justify-content-center">
-                <h5 class="fw-bold mb-2">GitHub</h5>
-                <a href="https://github.com/ElliotMu" class="btn btn-primary">Visiter mon profil</a>
-                </div>
-            </div>
-
             </div>
         </div>
-        </section>
+    </section>
 
-        <footer class="bg-dark text-white py-4">
-            <div class="container text-center">
-                <p class="mb-0">&copy; 2026 Elliot Musart. Tous droits réservés.</p>
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-12 col-lg-8 mx-auto text-center mb-5">
+                    <span class="eyebrow">Compétences</span>
+                    <h2 class="section-heading">Mes Compétences techniques</h2>
+                    <hr class="rule">
+                    <p class="section-sub mx-auto">Les langages et outils que j'utilise, en distinguant ce que je maîtrise de ce que j'approfondis.</p>
+                </div>
             </div>
-        </footer>
-    </body>
+
+ <div class="row reveal">
+                <div class="col-12">
+                    <div class="skills-legend">
+                        <span class="legend-item"><span class="legend-dot mastered"></span>Maîtrisé</span>
+                        <span class="legend-item"><span class="legend-dot learning"></span>Niveau moyen</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Langages</h3>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Java</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>PHP</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Python</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>C</span>
+                            <span class="skill-level mastered">Bases maîtrisées</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-12 col-md-6 col-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Balisage &amp; web</h3>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>HTML</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>CSS</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Bootstrap</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-12 col-md-6 col-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Bases de données</h3>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>SQL</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot learning"></span>NoSQL</span>
+                            <span class="skill-level learning">Niveau moyen</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>PostgreSQL</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>phpMyAdmin</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-12 col-md-6 col-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">En apprentissage</h3>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot learning"></span>JavaScript</span>
+                            <span class="skill-level learning">Niveau moyen</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot learning"></span>React</span>
+                            <span class="skill-level learning">Niveau moyen</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-12 col-md-6 col-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Technologies &amp; outils</h3>
+                        
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Git / GitHub</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>VS Code</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>JetBrains IDE</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>CRON</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot learning"></span>JavaFX</span>
+                            <span class="skill-level learning">Niveau moyen</span>
+                        </div>
+                      
+                    </div>
+                </div>
+ 
+                <div class="col-12 col-md-6 col-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Méthodologies</h3>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>MVC</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Design Patterns</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot learning"></span>UML</span>
+                            <span class="skill-level learning">Niveau moyen</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 reveal">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Connaissances supplémentaires</h3>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Réseaux</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>Architecture d'ordinateur</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name"><span class="dot mastered"></span>RGPD</span>
+                            <span class="skill-level mastered">Maîtrisé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-12 col-lg-8 mx-auto text-center mb-5">
+                    <span class="eyebrow">Projets</span>
+                    <h2 class="section-heading">Galerie de mes projets les plus formateurs</h2>
+                    <hr class="rule">
+                </div>
+            </div>
+ 
+            <!--
+                Pour ajouter un 5e projet : duplique un bloc ".project-slide"
+                ci-dessous (le JS s'adapte automatiquement au nombre de projets).
+            -->
+            <div class="projects-carousel reveal">
+                <button type="button" class="carousel-arrow prev" id="projectsPrev" aria-label="Projet précédent">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+ 
+                <div class="projects-track" id="projectsTrack">
+                    <div class="project-slide">
+                        <a href="projets/Lunaria.html" class="project-card">
+                            <div class="project-thumb">
+                                <img src="ressources/menuLunria.png" alt="Capture d'écran du menu de Lunaria">
+                            </div>
+                            <div class="project-body">
+                                <span class="project-tag">Java · JavaFX</span>
+                                <h3 class="project-title">Lunaria</h3>
+                                <p class="project-desc">Jeu 2D façon Terraria, développé en trinôme sans librairie de jeu : physique, carte procédurale, IA, craft et inventaire.</p>
+                                <span class="project-link">Voir le projet
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5l9-9M5 3.5h7.5V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+ 
+                    <div class="project-slide">
+                        <a href="projets/buvettes.html" class="project-card">
+                            <div class="project-thumb">
+                                <img src="ressources/accueilMaBuvette.PNG" alt="Capture d'écran de l'accueil de MaBuvette">
+                            </div>
+                            <div class="project-body">
+                                <span class="project-tag">PHP · HTML · CSS . SQL</span>
+                                <h3 class="project-title">MaBuvette</h3>
+                                <p class="project-desc">Site web responsive de gestion de buvettes associatives : commandes, rôles multiples et suivi des revenus.</p>
+                                <span class="project-link">Voir le projet
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5l9-9M5 3.5h7.5V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+ 
+                    <div class="project-slide">
+                        <a href="projets/KanaApp.html" class="project-card">
+                         <div class="project-thumb">
+                                <img src="ressources/projets/KanaApp/Hiragana.png" alt="Capture d'écran de l'accueil">
+                            </div>
+                            <div class="project-body">
+                                <span class="project-tag">React . CSS</span>
+                                <h3 class="project-title">KanaApp</h3>
+                                <p class="project-desc">Site web responsive d'apprentissage de l'alphabet japonais</p>
+                                <span class="project-link">Voir le projet
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5l9-9M5 3.5h7.5V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+ 
+
+                    <div class="project-slide">
+                        <a href="projets/MaBibli.html" class="project-card">
+                         <div class="project-thumb">
+                                <img src="ressources/projets/MaBibli/recherche.png" alt="Capture d'écran de l'accueil">
+                            </div>
+                            <div class="project-body">
+                                <span class="project-tag">Python . React . CSS . SQL</span>
+                                <h3 class="project-title">MaBibli</h3>
+                                <p class="project-desc">Site web responsive de bibliothèque d'animes et de mangas</p>
+                                <span class="project-link">Voir le projet
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5l9-9M5 3.5h7.5V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button type="button" class="carousel-arrow next" id="projectsNext" aria-label="Projet suivant">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ===================== EXPERIENCE (new) ===================== -->
+    <section id="experience">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-12 col-lg-8 mx-auto text-center mb-5">
+                    <span class="eyebrow">Expérience</span>
+                    <h2 class="section-heading">Parcours professionnel</h2>
+                    <hr class="rule">
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 reveal">
+                    <div class="experience-card">
+                        <div class="experience-top">
+                            <div class="experience-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 8.5a2 2 0 012-2h14a2 2 0 012 2V18a2 2 0 01-2 2H5a2 2 0 01-2-2V8.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.5V5a2 2 0 012-2h4a2 2 0 012 2v1.5M3 12.5h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <span class="experience-period">Avril — Juin 2026</span>
+                        </div>
+                        <h3 class="experience-title">Stage — DNEF</h3>
+                        <span class="experience-place">développeur d'application · Romainville</span>
+                        <p class="experience-desc">Durant ce stage, il m'a été confié l'ajout de nouvelles fonctionnalitées sur une application PHP déjà existante. J'ai pu découvrir de nouveaux outils tels que CRON ou JavaScript,
+                             et découvrir le  </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 reveal">
+                    <div class="experience-card">
+                        <div class="experience-top">
+                            <div class="experience-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 8.5a2 2 0 012-2h14a2 2 0 012 2V18a2 2 0 01-2 2H5a2 2 0 01-2-2V8.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.5V5a2 2 0 012-2h4a2 2 0 012 2v1.5M3 12.5h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <span class="experience-period">Période</span>
+                        </div>
+                        <h3 class="experience-title">Job étudiant - Etienne Coffee & Shop</h3>
+                        <span class="experience-place">Employé Polyvalent . Rosny sous Bois</span>
+                        <p class="experience-desc">Cette expérience fut une première rencontre avec le monde du travail. Je me suis vu confier diverses tâches telles que la préparation de commandes, le service des clients, 
+                            leur encaissement et la fermeture du magasin.
+                             Ce travail m'a permis d'acquérir une rigueur et un sérieux qui étaient nécessaires au bon fonctionnement de l'entreprise et au confort des clients.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-12 col-lg-8 mx-auto text-center mb-5">
+                    <span class="eyebrow">Contact</span>
+                    <h2 class="section-heading">Discutons</h2>
+                    <hr class="rule">
+                    <p class="section-sub mx-auto">Toutes les façons de me joindre et de consulter mon travail.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 reveal">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6.5l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h5>Email</h5>
+                        <p>elliotmusart@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11.5A7 7 0 105 9.5C5 14.9 12 21 12 21z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg>
+                        </div>
+                        <h5>Localisation</h5>
+                        <p>Rosny-sous-Bois 93110<br>Île-de-France</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v15H6V2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15 2v5h5M9 13h6M9 17h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h5>Mon CV</h5>
+                        <p>Formation, projets et compétences en un coup d'œil.</p>
+                        <a href="ressources/CV_Stage_Infomatique_Elliot_Musart.pdf" class="btn-line solid">Voir mon CV</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-2 1.03-2.7-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 015 0c1.9-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.7 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0012 2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h5>GitHub</h5>
+                        <p>Le code source de mes projets et mes contributions.</p>
+                        <a href="https://github.com/ElliotMu" class="btn-line" target="_blank" rel="noopener">Visiter mon profil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p>© 2026 Elliot Musart — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
-
-
-
