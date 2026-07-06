@@ -1,10 +1,3 @@
-/* ==========================================================================
-   Elliot Musart — Portfolio
-   Design concept: calm, editorial, warm-neutral palette with a serif/sans
-   pairing. Generous whitespace, restrained motion, one accent color used
-   sparingly. Built to read as professional and easy, not flashy.
-   ========================================================================== */
-
 :root {
   --ink: #1c2027;
   --ink-soft: #3a3f47;
@@ -100,9 +93,7 @@ section { padding: 6.5rem 0; }
 }
 .text-center .rule { margin-left: auto; margin-right: auto; }
 
-/* ==========================================================================
-   Navbar
-   ========================================================================== */
+
 .navbar {
   height: var(--nav-height);
   background: rgba(250, 248, 244, 0.9) !important;
@@ -161,9 +152,7 @@ section { padding: 6.5rem 0; }
   .nav-link.is-active { background: var(--accent-soft); border-radius: 8px; }
 }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
+
 #home {
   min-height: 92vh;
   display: flex;
@@ -255,10 +244,8 @@ section { padding: 6.5rem 0; }
 .hero-meta-item .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--faint); margin-bottom: 0.3rem; }
 .hero-meta-item .value { font-family: var(--font-serif); font-size: 1.1rem; color: var(--ink); }
 
-/* ==========================================================================
-   About
-   ========================================================================== */
-#about { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+#about { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 
 .about-lead { font-family: var(--font-serif); font-size: 1.45rem; color: var(--ink); line-height: 1.5; margin-bottom: 1.5rem; }
 .about-lead strong { color: var(--accent-strong); font-weight: 600; }
@@ -320,9 +307,7 @@ section { padding: 6.5rem 0; }
   .diploma-status { margin-top: 0; }
 }
 
-/* ==========================================================================
-   Skills — legible category cards
-   ========================================================================== */
+
 #skills { background: var(--paper-alt); }
 
 .skills-legend {
@@ -407,10 +392,7 @@ section { padding: 6.5rem 0; }
 }
 .tool-tag:hover { border-color: var(--accent); color: var(--accent-strong); }
 
-/* ==========================================================================
-   Projects
-   ========================================================================== */
-#projects { background: var(--paper); }
+#projects { background: var(--surface); }
 
 .project-card {
   display: flex;
@@ -425,8 +407,6 @@ section { padding: 6.5rem 0; }
 }
 .project-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px -24px rgba(28,32,39,0.18); }
 
-/* padding-top ratio box: keeps a fixed 16:10 frame without relying on
-   aspect-ratio support, so the image can never blow out the card */
 .project-thumb {
   position: relative;
   width: 100%;
@@ -505,6 +485,8 @@ section { padding: 6.5rem 0; }
 .project-card.placeholder { border-style: dashed; box-shadow: none; }
 .project-card.placeholder:hover { transform: none; box-shadow: none; }
 .placeholder-thumb {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,9 +502,7 @@ section { padding: 6.5rem 0; }
   .carousel-arrow { width: 38px; height: 38px; }
 }
 
-/* ==========================================================================
-   Experience — one clearly separated card per role (new section)
-   ========================================================================== */
+
 #experience { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 
 .experience-card {
@@ -582,9 +562,7 @@ section { padding: 6.5rem 0; }
   text-align: center;
 }
 
-/* ==========================================================================
-   Contact
-   ========================================================================== */
+
 #contact { background: var(--paper-alt); }
 
 .contact-card {
@@ -607,9 +585,7 @@ section { padding: 6.5rem 0; }
 .contact-card h5 { font-family: var(--font-serif); font-size: 1.1rem; color: var(--ink); margin-bottom: 0.5rem; }
 .contact-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+
 footer.site-footer {
   background: var(--paper);
   border-top: 1px solid var(--line);
@@ -621,9 +597,7 @@ footer.site-footer p {
   margin: 0;
 }
 
-/* ==========================================================================
-   Scroll reveal
-   ========================================================================== */
+
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16,1,0.3,1); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
@@ -631,9 +605,7 @@ footer.site-footer p {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
-/* ==========================================================================
-   Project detail pages
-   ========================================================================== */
+
 .detail-hero {
   padding-top: calc(var(--nav-height) + 3.5rem);
   padding-bottom: 3.5rem;
@@ -701,9 +673,7 @@ footer.site-footer p {
 
 hr.divider-line { border: none; border-top: 1px solid var(--line); margin: 2.25rem 0; }
 
-/* ==========================================================================
-   Small-screen refinements
-   ========================================================================== */
+
 @media (max-width: 575.98px) {
   .skill-card,
   .experience-card,
